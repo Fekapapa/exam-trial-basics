@@ -10,3 +10,13 @@ pirates = [
 # And returns a list of names containing the pirates that
 # - have wooden leg and
 # - have more than 15 gold
+
+def pirate_checker(list_diction):
+	names = []
+	for dictionary in list_diction:
+		if dictionary['has_wooden_leg'] == True and dictionary['gold'] > 15:
+			names.append(dictionary['Name'])
+	return names
+
+
+#print(pirate_checker(pirates))

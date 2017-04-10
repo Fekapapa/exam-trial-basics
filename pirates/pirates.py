@@ -17,6 +17,3 @@ def pirate_checker(list_diction):
 		if dictionary['has_wooden_leg'] == True and dictionary['gold'] > 15:
 			names.append(dictionary['Name'])
 	return names
-
-
-#print(pirate_checker(pirates))

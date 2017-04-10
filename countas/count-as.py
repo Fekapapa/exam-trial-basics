@@ -5,18 +5,18 @@ from os import path
 
 def count_as(textfile):
     try:
-        file_path = path.join("C:\exam-trial-basics\countas", textfile)
-        my_file = open(file_path, "r")
+        file_path = path.join('C:\exam-trial-basics\countas', textfile)
+        my_file = open(file_path, 'r')
         lines = my_file.readline()
+        my_file.close()
         a_number = 0
         for line in lines:
             for letter in line:
-                if letter == "a" or letter == "A":
+                if letter == 'a' or letter == 'A':
                     a_number += 1
-        my_file.close()
         return (a_number)
     except FileNotFoundError:
-        return ("0")
+        return 0
 
 
 print(count_as("afile.txt")) # should print 28

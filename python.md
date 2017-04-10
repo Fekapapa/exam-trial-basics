@@ -32,4 +32,15 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: To generate a random number in python you have to import the random method from the python library with "import random" command. From the random method you have to use the random function to generate a number. This number on default will be a number between 0 and 1. Here is an example:
+
+import random
+random.random()
+
+If you want to display this number, you have to print it:
+
+print(random.random())
+
+It is possible to give a range for the random to generate numbers in it. The example below will generate a number between 2 and 12:
+
+random.randrange(2, 12)

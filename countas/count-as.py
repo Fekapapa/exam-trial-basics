@@ -3,23 +3,20 @@
     # If the file does not exist, the function should return 0 and not break.
 
 def count_as(textfile):
-    def __init__(self, textfile=""):
-        self.textfile = textfile
-
-    def a_counter(self, textfile=""):
-        self.my_file = open(self.textfile, "r")
-        self.lines = self.my_file.readlines()
-        self.a_number = 0
-        for line in self.lines:
-            oneline = lines[linecount]
-            linecount += 1
-            halflinelength = len(oneline) // 2
-            charcount = 0
-            fulltext = ""
-            for char in range(halflinelenth):
-                fulltext += oneline[charcount]
-                charcount += 2
+    try:
+        #path = (r"C:\exam-trial-basics\countas\" + str(textfile))
+        my_file = open(r"C:\exam-trial-basics\countas\" + afile.txt, "r")
+        lines = my_file.readline()
+        a_number = 0
+        for line in lines:
+            for letter in line:
+                if letter == "a" or letter == "A":
+                    a_number += 1
+        my_file.close()
+        return (a_number)
+    except FileNotFoundError:
+        return ("0")
 
 
-print(count_as("afile.txt")) # should print 28
-print(count_as("not-a-file")) # should print 0
+#print(count_as("afile.txt")) # should print 28
+#print(count_as("not-a-file")) # should print 0
